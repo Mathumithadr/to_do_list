@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVELlIFE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="titlebar">
+        <h1>NOVELlIFE</h1>
+        <div class="user-bar">
+            <span id="username"></span>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="book-container">
+            <h2 class="book_name">Light Novel Cave</h2>
+            <p class="book_author"><b>Rukiasbunny</b></p>
+            <p class="book_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rerum enim et, voluptatibus perferendis aperiam distinctio possimus odit sit quidem ea tenetur dolorum, quos in sint voluptate nam. Dignissimos, unde!</p>
+            <button class="book_remove" onclick="deletebook(event)">delete</button>
+        </div>
+    </div>
+
+    <button class="add-button" id="add_popup">+</button>
+
+    <div class="opaque"></div>
+
+    <div class="popup-container">
+        <form>
+            <h2>Add Book</h2>
+            <input type="text" placeholder="Book Title" class="book-input" id="book-title-input">
+            <input type="text" placeholder="Book Author" class="book-input" id="book-author-input">
+            <textarea type="text" placeholder="Short Description..." id="book-detail-input"></textarea>
+            <button class="bookadd-btn" id="add">ADD</button>
+            <button class="bookadd-btn" id="cancel">CANCEL</button>
+            <button class="bookadd-btn" id="clear">CLEAR</button>
+
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
